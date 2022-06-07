@@ -3,10 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { ItemMcaComponent } from './item-mca/item-mca.component';
+import { FooterComponent } from './footer/footer.component';
+import { InsideMcaComponent } from './inside-mca/inside-mca.component';
+import { DataMcaComponent } from './data-mca/data-mca.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ItemMcaComponent,
+    FooterComponent,
+    InsideMcaComponent,
+    DataMcaComponent
   ],
   imports: [
     BrowserModule,

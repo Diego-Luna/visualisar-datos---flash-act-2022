@@ -1,0 +1,146 @@
+p{
+  color: black;
+  font-size: 1.6rem;
+  text-align: initial;
+  width: 200px;
+}
+
+a{
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 100%;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 39px;
+}
+
+.item-container{
+  width: 100%;
+  height: 80vh;
+  border: none;
+  border-radius: 60px;
+  box-shadow: 0px 3px 12px 0 #707070;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  background-color: white;
+}
+
+
+.item-sensores-container,
+.item-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.item-info-container{
+  padding-top: 20px;
+  height: calc(40% - 20px);
+  display:  flex;
+}
+
+.item-sensores-container{
+  height: 60%;
+}
+
+.mapa-container{
+  width: 455px;
+  height: 280px;
+  background-color: black;
+  border: none;
+  border-radius: 39px;
+}
+
+.text-seccion{
+  display: flex;
+  align-items: center;
+}
+.info-container{
+  margin-right: 60px;
+}
+
+.text-black{
+  font-weight: bold;
+  color: #707070;
+  width: 300px;
+  text-align: end;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+.sensor-container{
+  height: 345.85px;
+  width: 294px;
+  border: none;
+  border-radius: 32px;
+}
+.icon p{
+  width: auto;
+  font-family: "Cubano";
+  font-size: 2.5rem;
+  color: #065E95;
+}
+.icon{
+  width: 86px;
+  height: 85px;
+  background-color: white;
+  border: none;
+  border-radius: 19px;
+  position: relative;
+  top: 35px;
+  left: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.seccion-color{
+  position: relative;
+  top:  calc(100% - 237px);;
+  width: 100%;
+  height: 150px;
+  border-radius: 0px 0px 32px 32px;
+}
+.value{
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-top: 20px;
+  z-index: 2;
+  position: relative;
+  left: 35px;
+  width: auto;
+}
+
+.ph{
+  background-image: linear-gradient(#2D83B6, #045C93);
+}
+.ph .seccion-color{
+  background-color: #084382;
+}
+
+.tem{
+  background-image: linear-gradient(#53A6D8, #2D83B6);
+}
+.tem .seccion-color{
+  background-color: #1B6CB7;
+}
+
+.tds{
+  background-image: linear-gradient(#89CCF8, #53A6D8);
+}
+.tds .seccion-color{
+  background-color: #4AA3F1;
+}
+
+.tur{
+  background-image: linear-gradient(#C0E5FD, #89CCF8);
+}
+.tur .seccion-color{
+  background-color: #91CEFB;
+}

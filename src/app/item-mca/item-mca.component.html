@@ -1,15 +1,17 @@
 <div class="item-container">
     <div class="item-info-container">
      <!-- mapa -->
-      <figure class="mapa-container">
+      <div class="two" >
+        <figure class="mapa-container">
           <img src="./assets/mapa.png" alt="mapa">
-      </figure>
+        </figure>
+      </div>
 
       <!-- informacion -->
-      <div class="info-container">
-          <div class="text-seccion"> <p class="text-black">Institución o comunidad:</p> <p>EUR</p> </div>
-          <div class="text-seccion"> <p class="text-black">Nombre:</p> <p>El salto 1</p> </div>
-          <div class="text-seccion"> <p class="text-black">ubicación:</p> <p>20.510526694027835, -103.17511108674198</p> </div>
+      <div class="info-container two">
+        <p> <b class="text-black">Nombre :</b> El salto 1</p>
+        <p> <b class="text-black">ubicación :</b> 20.510526694027835, -103.17511108674198</p>
+        <p> <b class="text-black">Institución o comunidad :</b> EUR</p>
       </div>
 
       <a class="button-container" routerLink="/view/1" routerLinkActive="active">
@@ -18,33 +20,50 @@
     </div>
 
     <!-- sensores -->
-    <div class="item-sensores-container" routerLink="/data/1" routerLinkActive="active">
-      <div class="sensor-container ph">
-        <div class="icon"><p>pH</p></div>
-        <!-- sona de color -->
-        <div class="seccion-color"></div>
-        <p class="value">7.00</p>
+    <div class="item-sensores-container">
+      <div class="all-sense">
+        <div class="sensor">
+          <div class="sensor-info">
+            <h4>Ph</h4>
+            <h3>316.20</h3>
+          </div>
+          <figure class="grafica">
+            <img src="./assets/graficas/ph.svg" alt="mapa">
+          </figure>
+        </div>
+        <div class="sensor">
+          <div class="sensor-info">
+            <h4>Tem</h4>
+            <h3>306.20</h3>
+          </div>
+          <figure class="grafica">
+            <img src="./assets/graficas/tem.svg" alt="mapa">
+          </figure>
+        </div>
+        <div class="sensor">
+          <div class="sensor-info">
+            <h4>Tur</h4>
+            <h3>7670</h3>
+          </div>
+          <figure class="grafica">
+            <img src="./assets/graficas/tur.svg" alt="mapa">
+          </figure>
+        </div>
+        <div class="sensor">
+          <div class="sensor-info">
+            <h4>TDS</h4>
+            <h3>3137</h3>
+          </div>
+          <figure class="grafica">
+            <img src="./assets/graficas/tds.svg" alt="mapa">
+          </figure>
+        </div>
       </div>
-
-      <div class="sensor-container tem">
-        <div class="icon"><p>TEM</p></div>
-        <!-- sona de color -->
-        <div class="seccion-color"></div>
-        <p class="value">25.00</p>
-      </div>
-
-      <div class="sensor-container tds">
-        <div class="icon"><p>TDS</p></div>
-        <!-- sona de color -->
-        <div class="seccion-color"></div>
-        <p class="value">10</p>
-      </div>
-
-      <div class="sensor-container tur">
-        <div class="icon"><p>TUR</p></div>
-        <!-- sona de color -->
-        <div class="seccion-color"></div>
-        <p class="value">10</p>
+      <div class="grafic-sense">
+        <h4>Ph</h4>
+        <figure class="data-time">
+          <img src="./assets/graficas/data-time.png" alt="data-time">
+        </figure>
       </div>
     </div>
 </div>

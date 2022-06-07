@@ -1,146 +1,114 @@
-p{
-  color: black;
-  font-size: 1.6rem;
-  text-align: initial;
-  width: 200px;
-}
-
-a{
-  width: 80px;
-  height: 80px;
-  border: none;
-  border-radius: 100%;
-}
-
 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 39px;
 }
 
 .item-container{
-  width: 100%;
-  height: 80vh;
-  border: none;
-  border-radius: 60px;
-  box-shadow: 0px 3px 12px 0 #707070;
   margin-top: 60px;
-  margin-bottom: 60px;
+  /* height: 1181px; */
+  height: auto;
+  width: calc(100% - 2(45px));
+  padding: 45px;
+  border: none;
+  border-radius: 40px;
   background-color: white;
 }
 
-
-.item-sensores-container,
 .item-info-container{
+  height: 200px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  position:inherit;
 }
-.item-info-container{
-  padding-top: 20px;
-  height: calc(40% - 20px);
-  display:  flex;
+.two{
+  width: 49%;
+  height: 100%;
+  background-color: #F0F0F0;
+  border: none;
+  border-radius: 5px;
+}
+.mapa-container{
+  width: 100%;
+  height: 100%;
+}
+.info-container{
+  width: calc(49% - 80px);
+  height: calc(200px - 80px);
+  padding: 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+.button-container{
+  position:absolute;
+  right: 10%;
 }
 
+/* sensores */
 .item-sensores-container{
   height: 60%;
 }
-
-.mapa-container{
-  width: 455px;
-  height: 280px;
-  background-color: black;
-  border: none;
-  border-radius: 39px;
-}
-
-.text-seccion{
-  display: flex;
-  align-items: center;
-}
-.info-container{
-  margin-right: 60px;
-}
-
-.text-black{
-  font-weight: bold;
-  color: #707070;
-  width: 300px;
-  text-align: end;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-
-.sensor-container{
-  height: 345.85px;
-  width: 294px;
-  border: none;
-  border-radius: 32px;
-}
-.icon p{
-  width: auto;
-  font-family: "Cubano";
-  font-size: 2.5rem;
-  color: #065E95;
-}
-.icon{
-  width: 86px;
-  height: 85px;
-  background-color: white;
-  border: none;
-  border-radius: 19px;
-  position: relative;
-  top: 35px;
-  left: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.seccion-color{
-  position: relative;
-  top:  calc(100% - 237px);;
+.all-sense{
+  margin-top: 30px;
+  height: 15%;
   width: 100%;
-  height: 150px;
-  border-radius: 0px 0px 32px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.value{
-  color: white;
-  font-size: 4rem;
-  font-weight: bold;
-  padding-top: 20px;
-  z-index: 2;
-  position: relative;
-  left: 35px;
-  width: auto;
+.sensor{
+  width: calc(24% - 20px);
+  height: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px #a1a1a1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sensor h4{
+  text-align: left;
+  font-weight: normal;
+  color: #7E84A3;
+  margin-bottom: 2%;
+  font-size: 1rem;
+}
+.sensor h3{
+  font-size: 1.3rem;
+}
+.grafica img{
+  object-fit: contain;
+}
+.grafica{
+  margin-top: 5%;
+  width: 45%;
+  height: 95%;
 }
 
-.ph{
-  background-image: linear-gradient(#2D83B6, #045C93);
-}
-.ph .seccion-color{
-  background-color: #084382;
-}
+/* grafica */
 
-.tem{
-  background-image: linear-gradient(#53A6D8, #2D83B6);
+.grafic-sense{
+  margin-top: 30px;
+  padding: 30px;
+  width: calc(100% - 60px);
+  height: calc(85% - 60px);
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 1px 2px #a1a1a1;
 }
-.tem .seccion-color{
-  background-color: #1B6CB7;
+.grafic-sense h4{
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: black;
+  text-align: left;
 }
-
-.tds{
-  background-image: linear-gradient(#89CCF8, #53A6D8);
-}
-.tds .seccion-color{
-  background-color: #4AA3F1;
-}
-
-.tur{
-  background-image: linear-gradient(#C0E5FD, #89CCF8);
-}
-.tur .seccion-color{
-  background-color: #91CEFB;
+.data-time{
+  width: 100%;
+  height: 90%;
 }

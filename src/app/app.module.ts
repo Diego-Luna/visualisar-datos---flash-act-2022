@@ -8,6 +8,7 @@ import { ItemMcaComponent } from './item-mca/item-mca.component';
 import { FooterComponent } from './footer/footer.component';
 import { InsideMcaComponent } from './inside-mca/inside-mca.component';
 import { DataMcaComponent } from './data-mca/data-mca.component';
+import { InsideMcaMachineComponent } from './inside-mca-machine/inside-mca-machine.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataMcaComponent } from './data-mca/data-mca.component';
     ItemMcaComponent,
     FooterComponent,
     InsideMcaComponent,
-    DataMcaComponent
+    DataMcaComponent,
+    InsideMcaMachineComponent
   ],
   imports: [
     BrowserModule,
